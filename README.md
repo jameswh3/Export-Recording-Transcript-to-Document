@@ -25,8 +25,8 @@ All settings are read from a `.env` file in the script directory. Lines starting
 |---|---|---|---|
 | `CLIENT_ID` | Yes | Azure AD app registration client ID used for delegated auth | `00000000-0000-0000-0000-000000000000` |
 | `SITE_URL` | Yes | Full URL of the SharePoint site containing the recordings | `https://contoso.sharepoint.com/sites/YourSiteName` |
-| `DOCUMENT_LIBRARY` | Yes | Name of the document library where recordings are stored | `Session Recordings` |
-| `SHAREPOINT_FOLDER` | No | Sub-folder path within the library to scope the export | `AK` |
+| `DOCUMENT_LIBRARY` | Yes | Name of the document library where recordings are stored | `Recordings` |
+| `SHAREPOINT_FOLDER` | No | Sub-folder path within the library to scope the export | `2024` |
 | `DESTINATION_FOLDER` | Yes | Local folder where VTT files and Word docs are saved | `C:\Temp\Transcripts` |
 | `STREAM_ENDPOINT` | Yes | SharePoint Stream URL path used to build playback links | `/_layouts/15/stream.aspx` |
 | `VTT_SEGMENT_SIZE` | No | How many seconds of transcript to group per Word section (default: `30`) | `60` |
@@ -40,8 +40,8 @@ DESTINATION_FOLDER=C:\Temp\Transcripts
 VTT_SEGMENT_SIZE=30
 
 SITE_URL=https://contoso.sharepoint.com/sites/YourSiteName
-DOCUMENT_LIBRARY=Session Recordings
-SHAREPOINT_FOLDER=AK
+DOCUMENT_LIBRARY=Recordings
+SHAREPOINT_FOLDER=2024
 STREAM_ENDPOINT=/_layouts/15/stream.aspx
 ```
 
