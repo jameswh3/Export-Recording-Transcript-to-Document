@@ -24,7 +24,7 @@ All settings are read from a `.env` file in the script directory. Lines starting
 | Variable | Required | Description | Example |
 |---|---|---|---|
 | `CLIENT_ID` | Yes | Azure AD app registration client ID used for delegated auth | `00000000-0000-0000-0000-000000000000` |
-| `SITE_URL` | Yes | Full URL of the SharePoint site containing the recordings | `https://contoso.sharepoint.com/sites/GovernmentAffairs` |
+| `SITE_URL` | Yes | Full URL of the SharePoint site containing the recordings | `https://contoso.sharepoint.com/sites/YourSiteName` |
 | `DOCUMENT_LIBRARY` | Yes | Name of the document library where recordings are stored | `Session Recordings` |
 | `SHAREPOINT_FOLDER` | No | Sub-folder path within the library to scope the export | `AK` |
 | `DESTINATION_FOLDER` | Yes | Local folder where VTT files and Word docs are saved | `C:\Temp\Transcripts` |
@@ -39,7 +39,7 @@ CLIENT_ID=047b873d-9edb-47f4-b6d9-15caaf083c09
 DESTINATION_FOLDER=C:\Temp\Transcripts
 VTT_SEGMENT_SIZE=30
 
-SITE_URL=https://contoso.sharepoint.com/sites/GovernmentAffairs
+SITE_URL=https://contoso.sharepoint.com/sites/YourSiteName
 DOCUMENT_LIBRARY=Session Recordings
 SHAREPOINT_FOLDER=AK
 STREAM_ENDPOINT=/_layouts/15/stream.aspx
